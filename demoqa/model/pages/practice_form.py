@@ -4,7 +4,6 @@ import allure
 from allure import step
 from allure_commons.types import Severity
 
-
 from demoqa.model.controls.datepicker import Datepicker
 from demoqa.model.controls.checkbox import CheckBox
 from demoqa.model.controls.dropdown import Dropdown

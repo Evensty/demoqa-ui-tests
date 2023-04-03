@@ -8,4 +8,7 @@ class Dropdown:
         browser.all('[id^=react-select][id*=option]').element_by(have.exact_text(by_text)).click()
 
 
-
+# FOR MODULAR
+def select(selector, /, *, by_text):
+    browser.element(selector).click()
+    browser.all('[id^=react-select][id*=option]').element_by(have.exact_text(by_text)).click()

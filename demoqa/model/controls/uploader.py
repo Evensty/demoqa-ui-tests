@@ -8,3 +8,7 @@ class Uploader:
         browser.element(selector).send_keys(path)
 
 
+# FOR MODULAR
+def attach(selector, /, *, file):
+    path = resources.path_to_dir(file)
+    browser.element(selector).send_keys(path)

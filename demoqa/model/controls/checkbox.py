@@ -7,3 +7,6 @@ class CheckBox:
         browser.all('[for^=hobbies-checkbox]').element_by(have.exact_text(by_text)).click()
 
 
+# FOR MODULAR
+def select(selector, /, *,  by_text):
+    browser.all(selector).element_by(have.exact_text(by_text)).click()
