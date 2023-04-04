@@ -1,8 +1,8 @@
-## UI autotests demoqa.com
+## Проект UI автотестов demoqa.com
 
-<!-- technologies -->
+<!-- Технологии -->
 
-### Stack and tools
+### Используемые технологии
 <p  align="center">
   <code><img width="5%" title="Pycharm" src="images/logo/pycharm.png"></code>
   <code><img width="5%" title="Python" src="images/logo/python.png"></code>
@@ -15,17 +15,16 @@
   <code><img width="5%" title="Selenoid" src="images/logo/selenoid.png"></code>
   <code><img width="5%" title="Allure Report" src="images/logo/allure_report.png"></code>
   <code><img width="5%" title="Allure TestOps" src="images/logo/allure_testops.png"></code>
-  <code><img width="5%" title="Jira" src="images/logo/jira.png"></code>
   <code><img width="5%" title="Telegram" src="images/logo/tg.png"></code>
 </p>
 
 
 <!-- Тест кейсы -->
 
-### What do tests check
+### Что проверяют UI тесты
 ![This is an image](images/screenshot/test_cases.png)
 
-### Test features:
+### Особенности тестов:
 
 1. Тест test_submitting_form_successfully - данный тест параметризирован на запуск браузера на разных разрешений экрана (1920x1080 и 1280x720)
 2. Тесты test_validation_field_email и test_send_empty_form - это примеры тестов созданных с использованием Page Module
