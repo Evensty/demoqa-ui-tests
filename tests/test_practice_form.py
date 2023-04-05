@@ -1,5 +1,6 @@
 import allure
 import pytest
+
 from allure_commons.types import Severity
 
 from demoqa.model.data.user import test_user
@@ -17,6 +18,7 @@ def test_practice_form(setup_browser, screen_size):
     setup_browser.config.window_width = int(width)
     setup_browser.config.window_height = int(height)
     practice_form = PracticePage(test_user)
+    practice_form.open_page()
     practice_form.fill_form(test_user)
     practice_form.check_results()
 

@@ -2,7 +2,6 @@ from selene import have
 from selene.support.shared import browser
 import allure
 from allure import step
-from allure_commons.types import Severity
 
 from demoqa.model.controls.datepicker import Datepicker
 from demoqa.model.controls.checkbox import CheckBox
@@ -79,9 +78,6 @@ class PracticePage:
         return self
 
     def fill_form(self, user):
-        with step("Переходим на страницу заполнения формы"):
-            browser.open('https://demoqa.com/automation-practice-form')
-            remove_junk_ads(browser)
         with step("Вводим имя"):
             self.set_fullname(user)
         with step("Вводим почту"):
