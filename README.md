@@ -21,8 +21,12 @@
 
 <!-- Тест кейсы -->
 
-### Что проверяют UI тесты
-![This is an image](images/screenshot/test_cases.png)
+### Что проверяем
+* Отправка формы и проверка данных всей заполненной формы
+* Отправка формы и проверка данных только с заполнением главных полей
+* Отправка пустой формы
+* Валидация поля номера телефона
+* Валидация поля Email
 
 ### Особенности тестов:
 
@@ -62,7 +66,7 @@
 ![This is an image](images/screenshot/allure_suites.png)
 
 ##### Видео прохождение теста
-![This is an image](images/screenshot/tests_ui.gif)
+![This is an image](images/screenshots/video_test_run_example.gif)
 
 
 <!-- Allure TestOps -->

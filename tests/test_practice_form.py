@@ -22,7 +22,6 @@ def test_practice_form(setup_browser, screen_size):
     practice_form.check_results()
 
 
-
 @allure.label('owner', 'Maxim Veselov')
 @allure.severity(Severity.NORMAL)
 @allure.story("Registration form")
@@ -41,7 +40,6 @@ def test_fill_only_required_fields():
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
 @allure.story("Registration form")
-@allure.feature("Forms")
 @allure.feature('Check validation count numbers less then ten')
 def test_validation_count_numbers_less_than_ten():
     practice_form = PracticePage(test_user)
@@ -57,8 +55,7 @@ def test_validation_count_numbers_less_than_ten():
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
 @allure.story("Registration form")
-@allure.feature("Forms")
-@allure.feature('Check validation count numbers less then ten')
+@allure.feature('check submit empty form')
 def test_submit_empty_form():
     practice_form = PracticePage(test_user)
     browser.open('https://demoqa.com/automation-practice-form')
