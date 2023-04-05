@@ -1,7 +1,6 @@
 import allure
 import pytest
 from allure_commons.types import Severity
-from selene import browser
 
 from demoqa.model.data.user import test_user
 from demoqa.model.pages.practice_form import PracticePage
@@ -29,7 +28,7 @@ def test_practice_form(setup_browser, screen_size):
 @allure.feature('Successful completion of the form with only required fields')
 def test_fill_only_required_fields():
     practice_form = PracticePage(test_user)
-    browser.open('https://demoqa.com/automation-practice-form')
+    practice_form.open_page()
     practice_form.set_fullname(test_user) \
         .select_gender(test_user) \
         .set_current_address(test_user) \
@@ -43,7 +42,7 @@ def test_fill_only_required_fields():
 @allure.feature('Check validation count numbers less then ten')
 def test_validation_count_numbers_less_than_ten():
     practice_form = PracticePage(test_user)
-    browser.open('https://demoqa.com/automation-practice-form')
+    practice_form.open_page()
     practice_form.set_fullname(test_user) \
         .select_gender(test_user) \
         .set_current_address(test_user) \
@@ -58,7 +57,7 @@ def test_validation_count_numbers_less_than_ten():
 @allure.feature('check submit empty form')
 def test_submit_empty_form():
     practice_form = PracticePage(test_user)
-    browser.open('https://demoqa.com/automation-practice-form')
+    practice_form.open_page()
     practice_form.submit()
     practice_form.check_validation_first_name()\
         .check_validation_last_name()\

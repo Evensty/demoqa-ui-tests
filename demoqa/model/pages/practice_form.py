@@ -17,6 +17,12 @@ class PracticePage:
     def __init__(self, user: User):
         self.user = user
 
+    def open_page(self):
+        browser.open('https://demoqa.com/automation-practice-form')
+        browser.driver.maximize_window()
+        remove_junk_ads(browser)
+        return self
+
     def set_fullname(self, user):
         browser.element('#firstName').type(user.first_name)
         browser.element('#lastName').type(user.last_name)
