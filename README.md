@@ -72,7 +72,7 @@
 - Перезапускать каждый тест отдельно от всех тестов
 - Добавлять ручные тесты
 
-![This is an image](images/screenshots/suites.png)
+![This is an image](images/screenshots/allure_suites.png)
 
 Во вкладке Launches мы можем видеть тестовые прогоны:
 ![This is an image](images/screenshots/launches.png)
