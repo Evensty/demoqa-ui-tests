@@ -26,19 +26,8 @@
 * Отправка формы и проверка данных только с заполнением главных полей
 * Отправка пустой формы
 * Валидация поля номера телефона
-* Валидация поля Email
 
-### Особенности тестов:
 
-1. Тест test_submitting_form_successfully - данный тест параметризирован на запуск браузера на разных разрешений экрана (1920x1080 и 1280x720)
-2. Тесты test_validation_field_email и test_send_empty_form - это примеры тестов созданных с использованием Page Module
-
-### Демонстрация тестов для работы с файлами
-![This is an image](images/screenshot/files_test_cases.png)
-Первый тест создает архив из 3 файлов с расширением: pdf, csv, xlsx. 
-Остальные три читают файлы внутри архива и проверяют содержимое файлов:
-![This is an image](images/screenshot/tests-files.png)
-![This is an image](images/screenshot/test-files-dir.png)
 
 <!-- Jenkins -->
 
@@ -47,7 +36,7 @@
 ### [Job](https://jenkins.autotests.cloud/job/kudaev-demo-qa/)
 
 ##### При нажатии на "Собрать сейчас" начнется сборка тестов и их прохождение, через виртуальную машину при помощи Selenoid.
-![This is an image](images/screenshot/jenkins.png)
+![This is an image](images/screenshots/jenkins.png)
 
 Также мы можем посмотреть выполнение тестов в консоли перейдя во вкладку "Вывод консоли" у определенного билда
 ![This is an image](images/screenshot/jenkins_console.png)
@@ -57,13 +46,13 @@
 ### <img width="3%" title="Allure Report" src="images/logo/allure_report.png"> Allure report
 
 ##### После прохождения тестов, результаты автоматически сохраняются. Чтобы посмотреть Allure отчет нужно нажать на иконке allure report у сборки.
-![This is an image](images/screenshot/allure_dashboard.png)
+![This is an image](images/screenshots/dashboard.png)
 
 ##### Во вкладке Graphs можно посмотреть графики о прохождении тестов, по их приоритезации, по времени прохождения и др.
-![This is an image](images/screenshot/allure_graphs.png)
+![This is an image](images/screenshots/graphs.png)
 
 ##### Во вкладке Suites находятся собранные тест кейсы, у которых описаны шаги и приложены логи, скриншот и видео о прохождении теста
-![This is an image](images/screenshot/allure_suites.png)
+![This is an image](images/screenshots/suites.png)
 
 ##### Видео прохождение теста
 ![This is an image](images/screenshots/video_test_run_example.gif)
@@ -76,7 +65,7 @@
 ### [Dashboard](https://allure.autotests.cloud/project/2021/dashboards)
 
 ##### Вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики и тестовые кейсы.
-![This is an image](images/screenshot/allure_testops_dashboard.png)
+![This is an image](images/screenshots/dashboard.png)
 
 #### Во вкладке со сьютами, мы можем:
 - Управлять всеми тест-кейсами или с каждым отдельно
@@ -84,7 +73,7 @@
 - Настроить интеграцию с Jira
 - Добавлять ручные тесты и т.д
 
-![This is an image](images/screenshot/allure_testops_suites.png)
+![This is an image](images/screenshots/suites.png)
 
 Во вкладке Launches мы можем видить тестовые прогоны:
 ![This is an image](images/screenshot/tests_runs.png)
@@ -96,4 +85,4 @@
 ### <img width="3%" title="Telegram" src="images/logo/tg.png"> Интеграция с Telegram
 ##### После прохождения тестов, в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах, а также ссылка на allure report.
 
-![This is an image](images/screenshot/tg_report.png)
+![This is an image](images/screenshots/tg.png)
