@@ -33,20 +33,20 @@
 
 ### <img width="3%" title="Jenkins" src="images/logo/jenkins.png"> Запуск проекта в Jenkins
 
-### [Job](https://jenkins.autotests.cloud/job/kudaev-demo-qa/)
+### [Job](https://jenkins.autotests.cloud/job/Maxim_Veselov11-demoqa-ui-tests/)
 
-##### При нажатии на "Собрать сейчас" начнется сборка тестов и их прохождение, через виртуальную машину при помощи Selenoid.
+##### При нажатии на "Собрать сейчас" начинается сборка тестов и их прохождение через Selenoid UI
 ![This is an image](images/screenshots/jenkins.png)
 
 Также мы можем посмотреть выполнение тестов в консоли перейдя во вкладку "Вывод консоли" у определенного билда
-![This is an image](images/screenshot/jenkins_console.png)
+![This is an image](images/screenshots/console.png)
 
 <!-- Allure report -->
 
 ### <img width="3%" title="Allure Report" src="images/logo/allure_report.png"> Allure report
 
 ##### После прохождения тестов, результаты автоматически сохраняются. Чтобы посмотреть Allure отчет нужно нажать на иконке allure report у сборки.
-![This is an image](images/screenshots/dashboard.png)
+![This is an image](images/screenshots/allure.png)
 
 ##### Во вкладке Graphs можно посмотреть графики о прохождении тестов, по их приоритезации, по времени прохождения и др.
 ![This is an image](images/screenshots/graphs.png)
@@ -62,21 +62,20 @@
 
 ### <img width="3%" title="Allure TestOps" src="images/logo/allure_testops.png"> Интеграция с Allure TestOps
 
-### [Dashboard](https://allure.autotests.cloud/project/2021/dashboards)
+### [Dashboard](https://allure.autotests.cloud/project/2112/dashboards)
 
 ##### Вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики и тестовые кейсы.
 ![This is an image](images/screenshots/dashboard.png)
 
 #### Во вкладке со сьютами, мы можем:
-- Управлять всеми тест-кейсами или с каждым отдельно
+- Управлять всеми тест-кейсами или каждым отдельно
 - Перезапускать каждый тест отдельно от всех тестов
-- Настроить интеграцию с Jira
-- Добавлять ручные тесты и т.д
+- Добавлять ручные тесты
 
 ![This is an image](images/screenshots/suites.png)
 
-Во вкладке Launches мы можем видить тестовые прогоны:
-![This is an image](images/screenshot/tests_runs.png)
+Во вкладке Launches мы можем видеть тестовые прогоны:
+![This is an image](images/screenshots/launches.png)
 
 
 
